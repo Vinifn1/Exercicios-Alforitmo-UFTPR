@@ -1,0 +1,69 @@
+#includePath.h <stdio.h>
+#includePath.h <math.h>
+ void main ()
+{
+    int i;
+    float s,a,sn,p;
+    printf ("informe seu numero de indentidade:");
+    scanf ("%d",&i);
+    printf ("Informe seu salario atual:");
+    scanf ("%f",&s);
+    printf ("Seu numero de identidade:%d",i);
+    printf ("\nSeu atual salario:%f",s);
+    if (s>300)
+    {
+        if (s>600)
+        {
+            if (s>900)
+            {
+                if (s>1500)
+                {
+                    if (s>2000)
+                    {
+                         printf ("\nNao ocorrera aumento salarial");
+                    }
+                    else
+                    {
+                         p=0.03;
+                         a=s*p;
+                         printf ("\nO aumento sera de 3%");
+                         sn=s+a;
+                         printf ("\nO salario novo sera de:%f",sn);
+                    }
+                }
+                else
+                {
+                    p=0.06;
+                    a=s*p;
+                    printf ("\nO aumento sera de 6%");
+                    sn=s+a;
+                    printf ("\nO salario novo sera de:%f",sn);
+                }
+            }
+            else
+            {
+                p=0.12;
+                a=s*p;
+                printf ("\nO aumento sera de 12%");
+                sn=s+a;
+                printf ("\nO salario novo sera de:%f",sn);
+            }
+        }
+        else
+        {
+            p=0.11;
+            a=s*p;
+            printf ("\nO aumento sera de 11%");
+            sn=s+a;
+            printf ("\nO salario novo sera de:%f",sn);
+        }
+    }
+    else
+    {
+        printf ("\nO aumento sera de 10%");
+        p=0.1;
+        a=s*p;
+        sn=s+a;
+        printf ("\nO salario novo sera de:%f",sn);
+    }
+}
